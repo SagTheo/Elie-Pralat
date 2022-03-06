@@ -8,7 +8,6 @@ function App() {
   return (
     <StylesProvider>
       <Menu logo="ÉLIE PRALAT hypnose"
-            //tabs={['Accueil', 'L\'hypnose', 'Applications', 'Qui-suis-je ?', 'Prendre rendez-vous']}
             tabs={[
               { title: 'Accueil', id: 'accueil' },
               { title: 'L\'hypnose', id: 'hypnose' },

@@ -5,7 +5,8 @@ import Container from 'react-bootstrap/Container'
 
 const Menu = ({ logo, tabs }) => {
   return (
-    <Navbar expand="lg" fixed="top" bg="dark" variant="dark">
+    //Play around with fixed prop for Navbar
+    <Navbar expand="lg" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand href="#">{logo}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
