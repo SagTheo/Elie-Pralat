@@ -2,6 +2,7 @@ import Menu from './components/Menu'
 import Home from './components/Home'
 import Hypnosis from './components/Hypnosis'
 import Applications from './components/Applications'
+import WhoAmI from './components/WhoAmI'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {StylesProvider} from './context.js'
 
@@ -20,6 +21,7 @@ function App() {
       <Home />
       <Hypnosis />
       <Applications />
+      <WhoAmI />
     </StylesProvider>
   );
 }

@@ -8,9 +8,8 @@
     align-items: center;
 }
 
-.title {
+.icon, .title {
     margin-top: 1rem;
-    text-align: center;
 }
 
 .ul {

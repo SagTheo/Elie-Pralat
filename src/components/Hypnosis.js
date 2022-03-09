@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { StylesContext } from '../context.js'
-import img from '../sky.jpg'
+import img from '../img/sky.jpg'
 import styles from '../css/Hypnosis.module.css'
 
 const Hypnosis = () => {
