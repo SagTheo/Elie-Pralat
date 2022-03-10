@@ -4,8 +4,8 @@ const StylesContext = React.createContext()
 
 const styles = {
     color: 'burlywood',
-    container: '1rem',
-    section: '50px'
+    section: '50px',
+    h2Size: '2.5rem'
 }
 
 const StylesProvider = ({ children }) => {

@@ -3,6 +3,7 @@ import Home from './components/Home'
 import Hypnosis from './components/Hypnosis'
 import Applications from './components/Applications'
 import WhoAmI from './components/WhoAmI'
+import FAQ from './components/FAQ'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {StylesProvider} from './context.js'
 
@@ -13,15 +14,17 @@ function App() {
           tabs={[
             { title: 'Accueil', id: 'accueil' },
             { title: 'L\'hypnose', id: 'hypnose' },
-            { title: 'Applications', id: 'applications' },
             { title: 'Qui-suis-je ?', id: 'qui-suis-je' },
+            { title: 'Applications', id: 'applications' },
+            { title: 'FAQ', id: 'faq' },
             { title: 'Prendre rendez-vous', id: 'rdv' }
           ]}
       />
       <Home />
       <Hypnosis />
-      <Applications />
       <WhoAmI />
+      <Applications />
+      <FAQ />
     </StylesProvider>
   );
 }
