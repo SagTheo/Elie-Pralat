@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { StylesContext } from '../context.js'
-import styles from '../css/FAQ.module.css'
 import Accordion from 'react-bootstrap/Accordion'
+import styles from '../css/FAQ.module.css'
 
 const FAQ = () => {
   const commonStyles = useContext(StylesContext)
@@ -12,7 +12,6 @@ const FAQ = () => {
             <h2 className={styles.h2} style={{ fontSize: commonStyles.h2Size }}>Foire aux questions</h2>
             <Accordion defaultActiveKey="0" flush>
                 <Accordion.Item eventKey="0">
-                    {/* Check bootstrap css file to try and modify the accordion header background color */}
                     <Accordion.Header>Question 1</Accordion.Header>
                     <Accordion.Body className={styles.accordion}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

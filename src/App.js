@@ -3,9 +3,10 @@ import Home from './components/Home'
 import Hypnosis from './components/Hypnosis'
 import Applications from './components/Applications'
 import WhoAmI from './components/WhoAmI'
+import Appointment from './components/Appointment'
 import FAQ from './components/FAQ'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import {StylesProvider} from './context.js'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
       <WhoAmI />
       <Applications />
       <FAQ />
+      <Appointment />
+      <Footer />
     </StylesProvider>
   );
 }

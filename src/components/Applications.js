@@ -3,8 +3,8 @@ import { StylesContext } from '../context.js'
 import styles from '../css/Applications.module.css'
 import Card from './Card.js'
 import { Bank2 } from 'react-bootstrap-icons'
-import { Bookshelf } from 'react-bootstrap-icons';
-import { Droplet } from 'react-bootstrap-icons';
+import { Bookshelf } from 'react-bootstrap-icons'
+import { Droplet } from 'react-bootstrap-icons'
 
 const Applications = () => {
     const commonStyles = useContext(StylesContext)
