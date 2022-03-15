@@ -15,7 +15,7 @@ const Home = () => {
             </div>
             <button className={styles.button}
                     style={{ backgroundColor:  commonStyles.color}}
-            >Prendre rendez-vous</button>  
+            ><a href='#rdv'>Prendre rendez-vous</a></button>  
         </div>
     </div>
   )

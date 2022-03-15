@@ -26,3 +26,8 @@
     color: white;
     border: none;
 }
+
+.button a {
+    color: white;
+    text-decoration: none;
+}
