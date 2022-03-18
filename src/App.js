@@ -7,6 +7,9 @@ import Appointment from './components/Appointment'
 import FAQ from './components/FAQ'
 import {StylesProvider} from './context.js'
 import Footer from './components/Footer'
+import { Route, Routes } from 'react-router-dom'
+import LegalMentions from './components/LegalMentions'
+import SiteMap from './components/SiteMap'
 
 function App() {
   return (
@@ -28,6 +31,11 @@ function App() {
       <FAQ />
       <Appointment />
       <Footer />
+
+      <Routes>
+        <Route path='/legal-mentions' element={<LegalMentions />} />
+        <Route path='/sitemap' element={<SiteMap />} />
+      </Routes>
     </StylesProvider>
   );
 }
