@@ -1,23 +1,13 @@
 import React from 'react'
-import { Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import styles from '../css/Footer.module.css'
 
 const Footer = () => {
   return (
-    <footer>
-        <Nav className="justify-content-center bg-dark" activeKey="#">
-            <Nav.Item>
-                <Link to='/legal-mentions'>Mentions légales</Link>
-                {/* <Nav.Link href="#" className='text-white'>Mentions légales</Nav.Link> */}
-            </Nav.Item>
-            <Nav.Item>
-                <Link to='/sitemap'>Plan du site</Link>
-                {/* <Nav.Link eventKey="link-1" className='text-white'>Plan du site</Nav.Link> */}
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey="link-2" className='text-white'>Site réalisé par Théo Sagniez</Nav.Link>
-            </Nav.Item>
-        </Nav>
+    <footer className={styles.footer}>
+        <Link to='/legal-mentions' className='text-white text-decoration-none p-1 p-sm-2'>Mentions légales</Link>
+        <Link to='/sitemap' className='text-white text-decoration-none p-1 p-sm-2'>Plan du site</Link>
+        <a href='https://www.google.com' className='text-white text-decoration-none p-1 p-sm-2'>Site réalisé par Théo Sagniez</a>
     </footer>
   )
 }
