@@ -5,3 +5,10 @@
 .container {
     padding: 1rem;
 }
+
+@media (min-width: 426px) {
+    .cardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

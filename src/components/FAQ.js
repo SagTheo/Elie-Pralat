@@ -3,13 +3,17 @@ import { StylesContext } from '../context.js'
 import Accordion from 'react-bootstrap/Accordion'
 import styles from '../css/FAQ.module.css'
 
-const FAQ = () => {
+const FAQ = ({ id }) => {
   const commonStyles = useContext(StylesContext)
 
   return (
-    <section className={styles.bg} style={{ paddingTop: commonStyles.section }} id="faq">
+    <section className={styles.bg} style={{ paddingTop: commonStyles.section }} id={id}>
         <div className={styles.container}>
             <h2 className={styles.h2} style={{ fontSize: commonStyles.h2Size }}>Foire aux questions</h2>
+            <p className={styles.p}>Et si votre question n'a pas de réponse, n'hésitez pas à me contacter.
+                <br/>
+               Je me ferai un plaisir d'y répondre.
+            </p>
             <Accordion defaultActiveKey="0" flush>
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Question 1</Accordion.Header>

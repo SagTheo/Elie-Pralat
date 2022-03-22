@@ -2,16 +2,24 @@
     padding: 1rem;
 }
 
-.h2 {
+.h2, .p {
     color: white;
+    text-align: center;
 }
 
 .bg {
     background-color: #4753fe;
+    min-height: 100vh;
 }
 
 .accordion {
     background-color: #4753fe;
     color: white;
+}
+
+@media (min-width: 426px) {
+    .h2, .p {
+        margin-bottom: 2rem;
+    }
 }
 

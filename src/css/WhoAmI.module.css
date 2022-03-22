@@ -39,3 +39,13 @@
     font-size: x-large;
 }
 
+@media (min-width: 426px) {
+    .bg {
+        padding-bottom: 19rem; 
+    }
+
+    .img {
+        margin-top: -20rem;
+    }
+}
+

@@ -7,11 +7,10 @@ import WhoAmI from './WhoAmI'
 import Appointment from './Appointment'
 import FAQ from './FAQ'
 import Footer from './Footer'
-import {StylesProvider} from '../context.js'
 
 const Main = () => {
   return (
-    <StylesProvider>
+    <>
         <Menu logo="ÉLIE PRALAT hypnose"
           tabs={[
             { title: 'Accueil', id: 'accueil' },
@@ -22,14 +21,14 @@ const Main = () => {
             { title: 'Prendre rendez-vous', id: 'rdv' }
           ]}
         />
-        <Home />
-        <Hypnosis />
-        <WhoAmI />
-        <Applications />
-        <FAQ />
-        <Appointment />
+        <Home id='accueil'/>
+        <Hypnosis id='hypnose'/>
+        <WhoAmI id='qui-suis-je'/>
+        <Applications id='applications'/>
+        <FAQ id='faq'/>
+        <Appointment id='rdv' />
         <Footer />
-    </StylesProvider>
+    </>
   )
 }
 
