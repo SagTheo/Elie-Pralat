@@ -27,6 +27,7 @@
 }
 
 .quote {
+    margin: auto;
     width: 90%;
     color: black;
     display: flex;
@@ -46,6 +47,27 @@
 
     .img {
         margin-top: -20rem;
+    }
+}
+
+@media (min-width: 769px) {
+    .content {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .bg {
+        padding-bottom: 0;
+        padding-left: 6rem;
+    }
+
+    .img {
+        margin-top: 0;
+        height: 70%;
+    }
+
+    .bottomContainer {
+        justify-content: center;
     }
 }
 

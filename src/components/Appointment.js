@@ -7,7 +7,7 @@ const Appointment = ({ id }) => {
   const commonStyles = useContext(StylesContext)
 
   return (
-    <section style={{ paddingTop: commonStyles.section }} id={id}>
+    <section style={{ paddingTop: commonStyles.section, minHeight: commonStyles.minHeight  }} id={id}>
       <div className={styles.container}>
         <h2 style={{ color: commonStyles.color, fontSize: commonStyles.h2Size }}>Prendre rendez-vous</h2>
         <BSForm />

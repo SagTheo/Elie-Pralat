@@ -7,7 +7,7 @@ const FAQ = ({ id }) => {
   const commonStyles = useContext(StylesContext)
 
   return (
-    <section className={styles.bg} style={{ paddingTop: commonStyles.section }} id={id}>
+    <section className={styles.bg} style={{ paddingTop: commonStyles.section, minHeight: commonStyles.minHeight  }} id={id}>
         <div className={styles.container}>
             <h2 className={styles.h2} style={{ fontSize: commonStyles.h2Size }}>Foire aux questions</h2>
             <p className={styles.p}>Et si votre question n'a pas de réponse, n'hésitez pas à me contacter.
